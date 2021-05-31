@@ -131,6 +131,14 @@ export interface ReactNativePhoneInputProps<TextComponentType extends React.Comp
      */
     buttonTextStyle?: TextStyle;
     /**
+     * Custom props to control keyboard type
+     */
+    keyboardType?: string;
+    /**
+     * Custom props to control text input field focus
+     */
+    autoFocus?: boolean;
+    /**
      * Function to be invoked when phone number is changed
      */
     onChangePhoneNumber?: (displayValue: string, iso2: string) => void;
