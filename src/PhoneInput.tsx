@@ -227,9 +227,10 @@ export default class PhoneInput<TextComponentType extends React.ComponentType = 
                         onChangeText={(text) => {
                             this.onChangePhoneNumber(text);
                         }}
-                        keyboardType="phone-pad"
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={displayValue}
+			underlineColorAndroid="rgba(0,0,0,0)"
+			value={displayValue}
+			keyboardType={this.props.keyboardType || "numeric"}
+			autoFocus={this.props.autoFocus || false}
                         {...this.props.textProps}
                     />
                 </View>
